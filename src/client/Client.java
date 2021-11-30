@@ -65,10 +65,12 @@ public class Client extends JFrame{
 		if(protocol.equals("OffButton")) {
 			System.out.println("클라이언트 : 버튼 끄기");
 			btn.setEnabled(false);
+			btn.setText("누군가 클릭함!");
 		}
 		else if(protocol.equals("OnButton")) {
 			System.out.println("클라이언트 : 버튼 켜기");
 			btn.setEnabled(true);
+			btn.setText("클릭!");
 		}
 	}
 	
@@ -89,7 +91,7 @@ public class Client extends JFrame{
 		getContentPane().setBackground(Color.pink);
 		
 		btn = new JButton("클릭!");
-		btn.setBounds(200, 200, 100, 100);
+		btn.setBounds(150, 200, 200, 100);
 		btn.addActionListener((e)->{
 			sendMessage("ClickButton/ ");
 		});
