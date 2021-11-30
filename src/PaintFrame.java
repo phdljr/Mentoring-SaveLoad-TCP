@@ -51,7 +51,7 @@ public class PaintFrame extends JFrame {
 			}
 		});
 		btn_panel.add(save_btn);
-
+		
 		JButton load_btn = new JButton("불러오기");
 		load_btn.addActionListener((e) -> {
 			try {

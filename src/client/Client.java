@@ -90,7 +90,6 @@ public class Client extends JFrame{
 		
 		btn = new JButton("Å¬¸¯!");
 		btn.setBounds(200, 200, 100, 100);
-		btn.setBackground(Color.CYAN);
 		btn.addActionListener((e)->{
 			sendMessage("ClickButton/ ");
 		});
